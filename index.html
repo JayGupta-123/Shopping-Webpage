@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" type="image/png" href="shop_logo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping</title>
+</head>
+<body>
+    <div id="mainbox">
+        <nav id="navigation">
+            <img id="logo" src="shop_logo.png">
+            <div id="SearchBox">
+            <input id="searchBar" placeholder="Search" onkeyup="searchFunction();" type="search">
+            <img id="search" src="SearchIcon.png">
+            </div>
+            <div>
+                <div id="CartDropdown">
+            <img id="cart" src="carts.png">
+            <div id="CartList">
+                <table style="width: 100%;">
+                    <thead id="heads">
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                        <th></th>
+                    </thead>
+                    <tbody class="tbody"></tbody>
+                </table>
+                <div style="position: absolute; bottom: 20px;">
+                <hr id="hr">
+                <button id="EmptyCart" href="">Empty Cart</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        </nav>
+        <h1 id="header">Online Shopping</h1>
+        <div id="itemList">
+            <div class="smallCards">
+                <h6 class="hide">Apples</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="apples.PNG">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Apples</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.20 per LB</span><span class="discountPrice">$2.75</span></p>
+                    <button class="AddToCart" data-id="1" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+             
+            <div class="smallCards">
+                <h6 class="hide">Bananas</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="bannanas.jpg">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Bananas</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="2" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Strawberries</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="strawberry.jpg">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Strawberries</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="3" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Fresh Beatroots</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="freshBeatroots.PNG">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Fresh Beatroots</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="4" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Fresh Lemons</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="freshLemons.PNG">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Fresh Lemons</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="5" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Capsicum</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="cabsicum.PNG">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Capsicum</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="6" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Carrots</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="carrots.jpg">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Carrots</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="7" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Cucumbers</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="cucumebers.PNG">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Cucumbers</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="8" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Potatos</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="potatos.jpg">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Potatos</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="9" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Pumpkins</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="pumkins.jpg">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Pumpkins</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="10" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Tomatos</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="tomatos.PNG">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Tomatos</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart" data-id="11" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+            <div class="smallCards">
+                <h6 class="hide">Oranges</h6>
+                <div class="imageContent">
+                    <img class="productImage" src="oranges.PNG">
+                </div>
+                
+                <div class="textContent">
+                    <h4 class="productName">Oranges</h4>
+                    <select class="quantity" >
+                        <option value="1" selected>1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                    </select>
+                    <img class="stars" src="stars.png">
+                    <p><span class="price">$4.00 per LB</span><span class="discountPrice">$2.50</span></p>
+                    <button class="AddToCart"data-id="12" ><i class="fa fa-cart-plus"></i>&nbsp; Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

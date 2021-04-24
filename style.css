@@ -1,0 +1,256 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    user-select: none;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#EmptyCart{
+    text-decoration: none;
+    padding: 6.5px 100px;
+    border: 1.5px solid rgb(99, 98, 98);
+    border-radius: 4px;
+    color: rgb(99, 98, 98);
+    margin-left: 60px;
+    background-color: white;
+    font-size: 15px;
+}
+
+#EmptyCart:hover{
+    color: black;
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+
+#hr{
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+#CartDropdown:hover > #CartList{
+    display: block;
+}
+
+#CartList{
+    display: none;
+    width: 400px;
+    min-height: 500px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.699);
+    position: absolute;
+    right: -85px;
+    z-index: 1;
+    padding: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#SearchBox{
+    border: 2px solid gray;
+    padding: 0 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchBar{
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+#search{
+width: 20px;
+height: 20px;
+transform: rotate(270deg);
+}
+
+#search:hover{
+    cursor: pointer;
+}
+
+#mainbox{
+    height: 100%;
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#navigation{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+
+#cart{
+    height: 40px;
+    width: 40px;
+}
+
+#cart:hover{
+    cursor: pointer;
+}
+
+#header{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 40px;
+    text-align: center;
+}
+
+#itemList{
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.smallCards{
+    width: 250px;
+    height: 350px;
+    margin: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(128, 128, 128, 0.829);
+}
+
+.imageContent{
+    width: 100%;
+    height: 45%;
+    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.textContent{
+    position: relative;
+    width: 100%;
+    height: 55%;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.productImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.productName{
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.stars{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.price{
+    color: red;
+    margin-left: 10px;
+    margin-top: 60px;
+    position: absolute;
+    text-decoration: line-through;
+}
+
+.discountPrice{
+    margin-left: 150px;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.AddToCart{
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 10px;
+    width: 110px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(89, 202, 247);
+    font-weight: bold;
+}
+
+.AddToCart:hover{
+    cursor: pointer;
+    background-color: rgb(3, 165, 230);
+}
+
+.rowImg{
+    width: 75px;
+    height: 55px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.remove{
+    margin-left: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: red;
+    font-size: 15px;
+    color: black;
+    padding: 5px 11px;
+    border-radius: 50%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rowName{
+    margin-left: 30px;
+}
+
+.rowPrice{
+    margin-left: 40px;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 535px) {
+    #searchBar{
+        width: 180px;
+    }
+}
+
+.quantity{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.qty{
+    margin-left: 45px;
+}
